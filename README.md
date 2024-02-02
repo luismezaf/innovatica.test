@@ -14,7 +14,7 @@ docker-compose -f local.yml up --build
 2. In a new bash, create the first super user
 
 ```bash
-docker-compose run --rm django python manage.py createsuperuser
+docker-compose -f local.yml run --rm django python manage.py createsuperuser
 ```
 
 3. The server is now running and you can access to Django Admin with your credentials: http://localhost:8000/api/admin/
